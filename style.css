@@ -1,0 +1,83 @@
+.degradado {
+  width: auto;
+  height: 100vh; 
+  /*background-image: linear-gradient(
+      175deg,
+      #ffffff 0,
+      #ffffff 16.67%,
+      #ffffff 33.33%,
+      #f3f3f3 50%,
+      #d9e4e0 66.67%,
+      #c3d6ce 83.33%,
+      #b1c9bd 100%
+  );*/
+  background: #bebdbd;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ffffff, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ffffff, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+ /* display: flex;*/
+
+  justify-content: center;
+  align-items: flex-end; /* Alinea los elementos al final del contenedor */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea el contenido verticalmente */
+  max-width: 90%; /* Establece el ancho máximo del contenedor */
+  height: 80vh; /* Ajusta la altura del contenedor */
+  margin: 20px auto; /* Centra el contenedor horizontalmente y agrega margen en la parte superior e inferior */
+  overflow: auto; /* Agrega barras de desplazamiento si el contenido es demasiado grande */
+}
+
+.menuprincipal {
+  display: none; /* Por defecto oculto */
+ display:flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+  align-items: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Ajusta el ancho al 100% para ocupar toda la anchura */
+}
+
+.menuprincipal > div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Estilos adicionales opcionales */
+.menuprincipal > div p {
+  margin: 0;
+}
+
+.menuprincipal{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  background-color: #3498db; /* Color de fondo base */
+  color: #fff; /* Color de texto */
+}
+
+.button:hover {
+  background-color: #2980b9; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos específicos para los enlaces dentro de los botones */
+.button a {
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: inherit; /* Hereda el color de texto del botón */
+}
+
+/* Estilos para los elementos de lista (opcional) */
+.menuprincipal li {
+  list-style-type: none; /* Quita los marcadores de lista */
+  margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
